@@ -1,74 +1,71 @@
-Tech Stack:
+# README
 
-1.Node.js --FOR BACKEND SERVER
+## Tech Stack
 
-2.React.js (Vite Template) --FOR FRONT END SERVER
+1. **Node.js** - For backend server
+2. **React.js (Vite Template)** - For frontend server
+3. **PostgreSQL Database** - For storing data
 
-3.PostGres Database --FOR STORING DATA
+---
 
-Pre-requisites: (for the app to run locally)
+## Pre-requisites
 
-   1.Download Node.js from respective website.
-   
-   2.Download Git from respective website.
-   
-   3.Download PostGres database from respective website.
-   
-   Packages that need to be installed For Backend (npm install):
-		    
-  1.axios
-        
-  2.body-parser
-      
-  3.cors
-    		
-  4.dotenv
-    		
-  5.express
-    		
-  6.pg
-  
-   Packages that need to be installed For Frontend (npm install):
-		
-  1.React App with Vite Template (npm create vite@latest frontend -- --template react)
-		
-  2.@radix-ui/react-select 
-		
-  3.@radix-ui/react-slot 
-		
-  4.lucide-react 
-		
-  5.react-router-dom 
-		
-  6.clsx 
-		
-  7.tailwindcss-animate 
-		
-  8.class-variance-authority 
-		
-  9.tailwind-merge
-		
-  10.axios
+To run the app locally, ensure the following are installed:
 
-Migration and Seeding Steps: (for the app to run locally)
-   
-   1.Create a new Database in the Postgres Admin.
-   
-   2.Create a new Table in the Database with the Name,Type declarations specified in the tablecreation.sql file in the backend folder.
-   
-   3.Access every single Pokemon API page from PokeAPI, fetch necessary data using 'axios' and seed the fetched data into PostGres database using 'pg'. (Just run seed.js file)
-   
-   4.Add frontend server web address into 'app.use(cors{origin:" "})' function call since 'cors' package allows frontend server to access the data during its API call.
+1. **Node.js** - Download from the official website.
+2. **Git** - Download from the official website.
+3. **PostgreSQL Database** - Download from the official website.
 
-Running the App: (for the app to run locally)
-   
-   1.Save all the files in the same directory path as in the repository.
-   
-   2.Go to 'backend' directory in Command Prompt and type "node server.js".
-   
-   3.Open a new Command Prompt, go to 'frontend' directory and type "npm run dev".
-   
+---
 
+## Package Installation
 
-		
-                                   
+### Backend (Run `npm install` in the backend directory):
+
+- `axios`
+- `body-parser`
+- `cors`
+- `dotenv`
+- `express`
+- `pg`
+
+### Frontend (Run `npm install` in the frontend directory):
+
+- **React App with Vite Template**: `npm create vite@latest frontend -- --template react`
+- `@radix-ui/react-select`
+- `@radix-ui/react-slot`
+- `lucide-react`
+- `react-router-dom`
+- `clsx`
+- `tailwindcss-animate`
+- `class-variance-authority`
+- `tailwind-merge`
+- `axios`
+
+---
+
+## Migration and Seeding Steps
+
+To set up the database and seed it with data:
+
+1. Create a new database in PostgreSQL Admin.
+2. Create a new table in the database using the name and type declarations specified in the `tablecreation.sql` file in the backend folder.
+3. Access all Pokemon API pages from [PokeAPI](https://pokeapi.co/), fetch necessary data using `axios`, and seed the data into the PostgreSQL database using `pg` by running the `seed.js` file.
+4. Update the frontend server web address in the `app.use(cors({ origin: " " }))` function call to allow the frontend server to access data during API calls.
+
+---
+
+## Running the App
+
+To run the app locally:
+
+1. Ensure all files are saved in the same directory path as in the repository.
+2. Start the backend server:
+   - Navigate to the `backend` directory in the command prompt.
+   - Run the command: `node server.js`.
+3. Start the frontend server:
+   - Open a new command prompt.
+   - Navigate to the `frontend` directory.
+   - Run the command: `npm run dev`.
+
+---
