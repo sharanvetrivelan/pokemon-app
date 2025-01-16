@@ -2,10 +2,10 @@ const axios = require('axios');
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: 'postgres', 
-  host: 'localhost',
-  database: 'pokemon',
-  password: 'pokemon',
+  user: 'postgres', //My PostGres Username
+  host: 'localhost', 
+  database: 'pokemon', // My PostGres Database Name
+  password: 'pokemon', // My PostGres Password
   port: 5432,
 });
 
