@@ -51,8 +51,8 @@ To set up the database and seed it with data:
 1. Create a new database in PostgreSQL Admin.
 2. Create a new table in the database using the name and type declarations specified in the `tablecreation.sql` file in the backend folder.
 3. Access all Pokemon API pages from [PokeAPI](https://pokeapi.co/), fetch necessary data using `axios`, and seed the data into the PostgreSQL database using `pg` by running the `seed.js` file.
-4. Update the frontend server web address in the `app.use(cors({ origin: " " }))` function call to allow the frontend server to access data during API calls.
-
+4. Update the frontend server web address in the `app.use(cors({ origin: " " }))` function call to allow the frontend server to access data during API calls. Also you can change `app.use(cors({ origin: " " }))` key value as `app.use(cors({ origin: true }))` to allow any frontend server to access data from here.
+   
 ---
 
 ## Running the App
