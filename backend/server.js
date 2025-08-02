@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: ['http://localhost:3000','http://localhost:5173','https://pokemon-app-qakl.onrender.com/'],//This is my LocalHost Frontend Web Address
+  origin: ['http://localhost:3000','http://localhost:5173','https://pokemon-app-qakl.onrender.com'],//This is my LocalHost Frontend Web Address
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   credentials: true
 }));
@@ -66,4 +66,5 @@ app.get('/api/pokemon', async (req, res) => {
       res.status(500).send('Server error');
     }
   });
+
 
